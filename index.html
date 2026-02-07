@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Task Scheduler</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>📂 Smart Task Scheduler</h1>
+    <p class="subtitle">
+        Upload your file and background processing will happen automatically.
+    </p>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <div class="upload-box">
+            <input type="file" name="file" required>
+        </div>
+
+        <button type="submit">Upload File</button>
+    </form>
+
+    {% if message %}
+        <div class="message">
+            {{ message }}
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
