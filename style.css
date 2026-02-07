@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #333;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.upload-box {
+    border: 2px dashed #aaa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    width: 100%;
+}
+
+button {
+    background: #4e54c8;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #3b40a4;
+}
+
+.message {
+    margin-top: 20px;
+    background: #e6f7e6;
+    color: #2e7d32;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
